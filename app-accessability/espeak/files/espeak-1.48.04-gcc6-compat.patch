@@ -1,0 +1,11 @@
+--- espeak-1.48.04-source/src/tr_languages.cpp.old	2016-09-21 19:37:26.231665352 -0400
++++ espeak-1.48.04-source/src/tr_languages.cpp	2016-09-21 19:47:34.025433840 -0400
+@@ -198,7 +198,7 @@
+ 	0x200d,  1, // zero width joiner
+ 	0, 0 };
+ 
+-const char string_ordinal[] = {0xc2,0xba,0};  // masculine ordinal character, UTF-8
++const char string_ordinal[] = {(char) 0xc2,(char) 0xba,0};  // masculine ordinal character, UTF-8
+ 
+ 
+ static Translator* NewTranslator(void)
